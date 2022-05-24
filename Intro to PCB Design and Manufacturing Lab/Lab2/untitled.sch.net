@@ -1,0 +1,46 @@
+* SpiceNetList
+* 
+* Exported from untitled.sch at 2/7/20 11:09 PM
+* 
+* EAGLE Version 9.5.2 Copyright (c) 1988-2019 Autodesk, Inc.
+* 
+.TEMP=25.000000
+* --------- .OPTIONS ---------
+* --------- .PARAMS ---------
+
+* --------- devices ---------
+V_G2 N_5 0 9V 
+R_R1 N_1 N_2 100 
+V_G1 N_1 0 9V 
+D_LED1 N_3 N_2 DMOD 
+D_LED2 0 N_3 DMOD 
+R_R2 N_5 N_6 120 
+D_LED4 0 N_6 DMOD 
+D_LED3 0 N_6 DMOD 
+
+* --------- models ---------
+
+* model file: /Users/mymac/Documents/EAGLE/projects/Lab2/DMOD.mdl
+**********************
+* Autodesk EAGLE - Spice Model File
+* Date: 9/17/17
+* basic diode intrinsic model
+**********************
+.MODEL DMOD D
+
+
+* --------- simulation ---------
+.print DC I(V_G1) I(V_G2)
+.print AC I(V_G1) I(V_G2)
+.print TRAN I(V_G1) I(V_G2)
+.END
+
+
+
+
+
+
+
+
+
+
