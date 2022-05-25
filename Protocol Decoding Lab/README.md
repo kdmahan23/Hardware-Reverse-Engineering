@@ -11,7 +11,7 @@ The purpose of this lab was to familiarize students with one of the protocols di
 **Q1: What communications protocol is present? How can you tell based on the capture? Apply the correct analyzer to decode the protocol and verify that you are correct?**  
 - I2C
 - There are only 2 channels present in the capture. One for clock and one for the transmission. The other protocols need more channels
-    ![Protocol Verify](./protocol.PNG)  
+    ![Protocol Verify](.\protocol.PNG)  
 
 **Q2: Identify one transmission within the capture. How do you know when the transmission starts and when it stops?**
 - ![Transmissions](./transmission.png) 
